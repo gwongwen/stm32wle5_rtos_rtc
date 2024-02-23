@@ -1,10 +1,9 @@
 # Code for 6sens Omnitilt Project : test of STM32 RTC
 
 ## Overview
-This code allows us to use internal RTC of the STM32WLExx as system/sample clock. The driver uses the LSI as clock source, an internal low power RC oscillator with typical frequency of 32768Hz. The miliseconds are calculated according to the datasheet.
+This code allows us to use internal RTC of the STM32WLExx as system/sample clock. The driver uses the LSI as clock source, an internal low power RC oscillator with typical frequency of 32768Hz. The milliseconds are calculated according to the datasheet.
 
 ## Building and Running
-
 The following commands clean build folder, build and flash the sample:
 
 **Command to use**
