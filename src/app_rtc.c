@@ -31,7 +31,14 @@ int8_t app_stm32_rtc_init(const struct device *dev)
 //  ======== app_stm32_get_rtc ==============================================
 int8_t app_stm32_get_rtc(const struct device *dev)
 {
+    struct rtc_raw_ts *timestamp;
+    struct rtc_ts raw_time;
+
     stm32_rtc_initialize(dev);
+    stm32_rtc_getTimestamp(timestamp);
+    
+//    raw_time = rtc_ts_fromRaw(timestamp);
+//   printk("d: %d, t: %d, ms: %d\n", raw_time.d, raw_time.t, raw_time.ms);
 
     return 0;
 }

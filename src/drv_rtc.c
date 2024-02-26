@@ -137,4 +137,6 @@ void stm32_rtc_getTimestamp(rtc_raw_ts_t * ts)
 	ts->t = LL_RTC_TIME_Get(RTC);
 	// 0xWWDDMMYY
 	ts->d = LL_RTC_DATE_Get(RTC);
+
+	printk("ss: %d, t:%d, d: %d\n", ts->ss, ts->t, ts->d);
 }
